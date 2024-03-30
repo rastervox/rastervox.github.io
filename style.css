@@ -1,0 +1,14 @@
+body {
+    background: #FF0;
+    color: #FEE;
+}
+
+#centerfold {
+  font-family: system-ui;
+  background: #f06d06;
+  text-align: center;
+  margin-left: calc((100% - 66%) / 2 + 0px);
+  margin-right: calc((100% - 66%) / 2 + 0px);
+  width: 66%;
+  height: 600px;
+}
