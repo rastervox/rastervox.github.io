@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href=../style.css />
+  <link as="font" rel="preload" href="https://fonts.cmsfly.com/css?family=Tahoma|Orbitron:400,700,900&display=swap" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.cmsfly.com/css?family=Tahoma|Orbitron:400,700,900&display=swap" />
+  <style>
+    h3 {
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<html>
+  <body>
+    <div class="page">
+      <div class="centerfold">
+        <div class="header">
+          <img src="https://i.imgur.com/L2ekCMd.png" alt="" loading="lazy" class="header-image" />
+          <a href="../starsedge.html">
+            <div class="home">Back to Star's Edge</div>
+          </a>
+        </div>
+        <div class="article">
+          <div id="content">
+            <h1>Building a Character </h1>
+            <p>When starting play of Starfinder, just as with any TTRPG, the first thing you want to do is make a character. You guys are professionals, you know this, so I won&#039;t bore you with the lengthy preamble both the book and the archive does. </p>
+            <br>
+            <p>Making a character in Starfinder is a relatively simple process. </p>
+            <ol>
+              <li>Make a Concept</li>
+              <li>Choose a Race (species)</li>
+              <li>Choose a Theme (background)</li>
+              <li>Choose a Class</li>
+              <li>Decide and Apply your Ability Scores</li>
+              <li>Throw all these into a sheet (the bulk of the work)</li>
+            </ol> I&#039;ll try to make a simplified section for each of these steps, to make this as quick and easy as possible. So lets start with concept. I also try to link to the <a href="https://www.aonsrd.com/">Archives of Nethys</a>, basically the SRD for Starfinder (And both pathfinder versions). <h3>Make a Concept</h3>
+            <p>This is mostly up to the player, and this step is skippable as a first step if you like, as you may have more ideas when looking at the species, themes, and classes of Starfinder. Especially seeing as though I brought over and fleshed out some non-standard species to fill out the galaxy with some more alien-like aliens. </p>
+            <br>
+            <p>How and why do you want to explore the stars? There is a lot out there, and since you decided to explore, find a reason to be out here, and not just working on mining colony in the middle of nowhere. Running from an oppressive government? Tired of living a sedentary life? Just want to blow some stuff up? They are all good reasons to find solace in space-travel and exploration. Try to find your own. </p>
+            <h3>Choose a Race (Species)</h3>
+            <p>Everyone is born somewhere, and from someone. What exactly are you? </p>
+            <br>
+            <p>Every species gets an ability score modifier, HP to start with, special features, and other things such as size, speed, and languages. </p>
+            <br>
+            <p>All pages have more details about lore and such, as well as roleplay notes to conder how a species might act. They have different biology after all. </p>
+            <br>
+              <button type="button" class="collapsable">
+                <div class="col-full">
+                    <h5>Species List</h5>
+                    <div class="col-content"> 
+                        <br>
+                        <br>
+                        <embed type="text/html" src="embed-species.html" class="embed-species">
+                    </div>
+                </div>
+            </button>
+              <br>
+              <h3>Choose a Theme (Background)</h3>
+<p>While technically not the same as a D&D background, they are so similar as to be interchangeable here. A theme is just a core tenet of their backstory, motivations, and previous profession.</p>
+            <br>
+<p>If none fit you, and you don't want to use "Themeless", there are others on AON, but I cannot guarentee I will accept them, on the basis of lore conflicts.</p>
+            <br>
+                <button type="button" class="collapsable">
+                <div class="col-full">
+                    <h5>Theme List</h5>
+                    <div class="col-content"> 
+                        <br>
+                        <br>
+                        <embed type="text/html" src="embed-themes.html" class="embed-themes">
+                    </div>
+                </div>
+            </button>
+           <h3>Choose a Class</h3>
+<p>The real meat of a player's abilities, except not really. With how much the other aspects of a character affect how they interface with the world, the class is only one of many parts of a character.</p>
+            <br>
+<p>Most of the lore behind these fit the world just as well as in original Starfinder, because while Star's Edge is more grounded, magic is still a thing. It's just less prominent, or has been replaced with technology in some aspect.</p>
+            <br>
+                <button type="button" class="collapsable">
+                <div class="col-full">
+                    <h5>Class List</h5>
+                    <div class="col-content"> 
+                        <br>
+                        <br>
+                        <embed type="text/html" src="embed-classes.html" class="embed-classes" style="overflow:auto; scrollbar-gutter: stable;">
+                    </div>
+                </div>
+            </button>
+        </div>
+      </div>
+    </div>
+      </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsable");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.lastElementChild.lastElementChild;
+          if (content.style.display === "block") {
+              this.style.width = "auto";
+              this.style.textAlign = "center";
+            content.style.display = "none";
+          } else {
+              this.style.width = "calc(100% - 48px)";
+              this.style.textAlign = "left";
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

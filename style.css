@@ -1,3 +1,8 @@
+:root{
+    --ideal-width: 1140px;
+    --max-width: min(var(--ideal-width), 100%);
+}
+
 html {
   height: 100%;
     background: black;
@@ -9,13 +14,13 @@ html {
 	font-style: normal;
 }
 
-a:-webkit-any-link {
+a:-webkit-any-link{
       color: #FF6A00;
       cursor: pointer;
       text-decoration: none;
 }
 
-a:-webkit-any-link:hover {
+a:-webkit-any-link:hover{
       color: #FF3C00;
       cursor: pointer;
       text-decoration: none;
@@ -47,7 +52,6 @@ p {
 }
 
 .centerfold {
-	--max-width: min(1140px, 100%);
 	display: flex;
 	flex-direction: column;
 	background-color: #000d;
@@ -302,10 +306,46 @@ h6 {
 }
 
 table {
-    width: 100%;
+    background-color: #000000bb;
+    /*
+	border-width: 4px;
+	border-style: solid;
+	border-color: #ffffff27;
+	border-radius: 20px 20px 20px 20px;*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+    text-align: center;
+    border-collapse: collapse;
 }
 
-table td {
+
+th {
+    border-width: 0px;
+    border-top: 4px;
+    border-bottom: 4px;
+    border-style: solid;
+	border-color: #ffffff47;
+}
+
+td {
+    
+    border-width: 0px;
+    border-bottom: 4px;
+    border-style: solid;
+	border-color: #ffffff12;
+    padding: 5px;
+}
+
+.grid-large table {
+    width: 100%;
+    border-width: 0px;
+	padding: 0px;
+    border-collapse: separate;
+}
+
+.grid-large table td {
 	background-color: #000000bb;
 	border-width: 4px;
 	border-style: solid;
@@ -319,7 +359,7 @@ table td {
     width:33%;
 }
 
-table td img {
+.grid-large table td img {
 
 }
 
@@ -347,8 +387,41 @@ table td img {
 }
 
 .collapsable {
+    --collapsable-width: ;
+    display: inline-block;
     background: none;
       border: none;
+    width: auto;
+        /*calc(100% - 48px);*/
+    height:fit-content;
+}
+
+.col-full{
+    background-color: #000000bb;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #ffffff27;
+	border-radius: 20px 20px 20px 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+    width:100%;
+    height:fit-content;
+}
+
+.col-full:hover{
+	background-color: #444b;
+	border-color: #fffa;
+}
+
+.col-content{
+  display: none;
+  overflow: hidden;
+  color: #FFF;
+  width:100%;
+  height:fit-content;
+    background:none;
 }
 
 .text-picture {
@@ -359,3 +432,17 @@ table td img {
 	padding: 0px;
 }
 
+.embed-species{
+    height: 1200px;
+    width:100%;
+}
+
+.embed-themes{
+    height: 1150px;
+    width:100%;
+}
+
+.embed-classes{
+    height: 1050px;
+    width:100%;
+}

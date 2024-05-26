@@ -18,15 +18,14 @@
           </a>
         </div>
         <div class="article">
-                            <button type="button" class="collapsable">
-            <div class="topnote">
-                <h5>Developer Note</h5>
-                <div class="topnotecontent"> 
-                    Note: Early Stage Barathu are Playable, Late Stage are Not. This a balance and lore problem that not even Paizo have touched. I am not gonna nerf an entire species just because they made the late-stage versions too powerful lore-wise. I apologize for this inconvenience, and the numerous times that "early stage" must be added/included to these sections. — RasterVox
+            <button type="button" class="collapsable">
+                <div class="topnote">
+                    <h5>Developer Note</h5>
+                    <div class="topnotecontent"> 
+                        Note: Early Stage Barathu are Playable, Late Stage are Not. This a balance and lore problem that not even Paizo have touched. I am not gonna nerf an entire species just because they made the late-stage versions too powerful lore-wise. I apologize for this inconvenience, and the numerous times that "early stage" must be added/included to these sections. — RasterVox
+                    </div>
                 </div>
-                     
-            </div>
-                                </button>
+            </button>
            
         </div>
         <div class="article">
@@ -122,21 +121,6 @@
         </div>
       </div>
     </div>
-    <script>
-        var coll = document.getElementsByClassName("collapsable");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.lastElementChild.lastElementChild;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
-            }
-          });
-        }
-    </script>
+    <script >         var coll = document.getElementsByClassName("collapsable");         var i;          for (i = 0; i < coll.length; i++) {           coll[i].addEventListener("click", function() {             this.classList.toggle("active");             var content = this.lastElementChild.lastElementChild;             if (content.style.display === "block") {               content.style.display = "none";             } else {               content.style.display = "block";             }           });         }</script>
   </body>
 </html>
