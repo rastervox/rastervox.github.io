@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href=../style.css />
+  <link as="font" rel="preload" href="https://fonts.cmsfly.com/css?family=Tahoma|Orbitron:400,700,900&display=swap" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.cmsfly.com/css?family=Tahoma|Orbitron:400,700,900&display=swap" />
+      <link rel="icon" href="./icons/sf-class-solarian-icon-64.png">
+        <title>Intro to Star's Edge - Star's Edge</title>
+  <style>
+    h3 {
+      padding-top: 20px;
+    }
+  </style>
+
+</head>
+<html>
+  <body>
+    <div class="page">
+      <div class="centerfold">
+        <div class="header">
+          <img src="https://i.imgur.com/L2ekCMd.png" alt="" loading="lazy" class="header-image" />
+          <a href="../starsedge.html">
+            <div class="home">Back to Star's Edge</div>
+          </a>
+        </div>
+        <div class="article">
+          <div id="content">
+            <h1>Introduction to Star's Edge </h1>
+              <br>
+              <div class="prose">
+                  <p>Deep in the reaches of space, a lone ship floats in the void, battered and broken.</p><br>
+                  <p>Inside: a disgraced soldier with no place to call home, an aquatic scientist obsessed with finding a lost civilization, an android with a taste for destruction, and a 14-foot worm that can't stop watching holoTV.</p><br>
+                  <p>Having narrowly evaded a Diamond Tashtari raiding party, their vessel, the Gemini, is low on fuel, supplies, and options. Their only hope is to somehow maneuver the ship to nearest trading outpost and barter for what they need before another, even more dangerous threat catches up to them. </p><br>
+                  <p>But with no way to launch the ship, the only question on everyone's mind is... what do we do now?</p>
+              </div>
+              <br>
+              <p>Star's Edge is a sci-fi spacefaring tabletop RPG, using a lore-altered variation of Starfinder, the space version of Pathfinder 1e.</p><br>
+              <p>In the original Starfinder, magic was prevalent, and gods and demons were real. Star's Edge has these things removed. Faith is merely belief, Magic is either folk healing, advanced technology, or (in the case of Solarian's) harnessing the universe.</p>
+          </div>
+      </div>
+    </div>
+      </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsable");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.lastElementChild.lastElementChild;
+          if (content.style.display === "block") {
+              this.style.width = "auto";
+              this.style.textAlign = "center";
+            content.style.display = "none";
+          } else {
+              this.style.width = "calc(100% - 48px)";
+              this.style.textAlign = "left";
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

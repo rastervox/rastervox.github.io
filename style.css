@@ -43,7 +43,10 @@ p {
 .page {
 	background-color: #000000df;
 	width: 100%;
-    height: auto;
+    /*height: auto;*/
+    
+    min-height: 100%;
+    max-height: auto;
 	background-image: url(https://i.imgur.com/qaQn1Il.jpeg);
 	background-size: cover;
 	background-position: 50%;
@@ -303,6 +306,20 @@ h6 {
 
 .home:hover {
     background: #444a;
+}
+
+.prose {
+    background-color: #b57f33bb;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #ffce47;
+	border-radius: 20px 20px 20px 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+    color: #ffce47;
+    /*text-align: top left;*/
 }
 
 table {
