@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href=../style.css />
+  <link as="font" rel="preload" href="https://fonts.cmsfly.com/css?family=Tahoma|Orbitron:400,700,900&display=swap" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.cmsfly.com/css?family=Tahoma|Orbitron:400,700,900&display=swap" />
+      <link rel="icon" href="./icons/sf-class-envoy-icon-64.png">
+        <title>Feats - Star's Edge</title>
+  <style>
+    h3 {
+      padding-top: 20px;
+    }
+  </style>
+
+</head>
+<html>
+  <body>
+    <div class="page">
+      <div class="centerfold">
+        <div class="header">
+          <img src="https://i.imgur.com/L2ekCMd.png" alt="" loading="lazy" class="header-image" />
+          <a href="../starsedge.html">
+            <div class="home">Back to Star's Edge</div>
+          </a>
+        </div>
+        <div class="article">
+          <embed type="text/html" src="embed-feats.html" style="height:5130px; width:100%">
+      </div>
+    </div>
+      </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsable");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.lastElementChild.lastElementChild;
+          if (content.style.display === "block") {
+              this.style.width = "auto";
+              this.style.textAlign = "center";
+            content.style.display = "none";
+          } else {
+              this.style.width = "calc(100% - 48px)";
+              this.style.textAlign = "left";
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
