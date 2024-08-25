@@ -1,0 +1,484 @@
+:root{
+    --ideal-width: 1140px;
+    --max-width: min(var(--ideal-width), 100%);
+}
+
+html {
+  height: 100%;
+    background: black;
+}
+
+.inter-<Interloper> {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a:-webkit-any-link{
+      color: #FF6A00;
+      cursor: pointer;
+      text-decoration: none;
+}
+
+a:-webkit-any-link:hover{
+      color: #FF3C00;
+      cursor: pointer;
+      text-decoration: none;
+}
+
+body {
+	margin: 0 auto;
+    height: 100vh;
+	color: white;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: tahoma, sans-serif;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.page {
+	background-color: #000000df;
+	width: 100%;
+    /*height: auto;*/
+    
+    min-height: 100%;
+    max-height: auto;
+	background-image: url(https://i.imgur.com/qaQn1Il.jpeg);
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.centerfold {
+	display: flex;
+	flex-direction: column;
+	background-color: #000d;
+	margin: 0px;
+	width: var(--max-width, 100%);
+    height: 100%;
+	margin-left: calc((100% - var(--max-width, 100%)) / 2 + 0px);
+	margin-right: calc((100% - var(--max-width, 100%)) / 2 + 0px);
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.header {
+	margin-top: 0px;
+	margin-bottom: -6px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-width: 0;
+	border-style: solid;
+	border-left-width: 4px;
+	border-left-color: #ffffff27;
+	border-right-width: 4px;
+	border-right-color: #ffffff27;
+    position: relative;
+}
+
+.header-image {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.article {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 20px;
+	border-width: 0;
+	border-style: solid;
+	border-left-width: 4px;
+	border-left-color: #ffffff27;
+	border-right-width: 4px;
+	border-right-color: #ffffff27;
+    height: 100%;
+}
+
+.content {
+    height:100%;
+	flex-basis: 70%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.sidebar {
+	margin-left: 20px;
+	flex-basis: 30%;
+	background-color: #000000bb;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #ffffff27;
+	border-radius: 20px 20px 20px 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	min-width: 30%;
+}
+
+.sidebar-image {
+    margin: 0px;
+	padding: 0px;
+    text-align: center;
+    position: relative;
+}
+
+.sidebar-image-picture {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.sidebar-image .bottomtext {
+  display: none;
+  position: absolute;
+  background: #333;
+  color: #fff;
+bottom:20px;
+    width: 100%;
+    font-style: italic;
+}
+
+.sidebar-image:hover .toptext {
+      display: block;
+}
+
+.sidebar-image .toptext {
+  display: none;
+  position: absolute;
+  background: #333;
+  color: #fff;
+top: 0px;
+    width: 100%;
+    font-style: italic;
+}
+
+.sidebar-image:hover .bottomtext {
+      display: block;
+}
+
+h1 {
+	display: block;
+	font-size: 48px;
+	line-height: 1.5;
+	font-family: orbitron, sans-serif;
+	font-weight: 900;
+	margin: 0px;
+	padding: 0px;
+    color: #0DCBF5;
+}
+
+
+h2 {
+	font-size: 36px;
+	line-height: 1.5;
+	font-family: orbitron, sans-serif;
+	font-weight: 700;
+	margin-top: 32px;
+	margin-bottom: 4px;
+	padding: 0px;
+    color: #0DCBF5;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 1.5;
+	font-family: orbitron, sans-serif;
+	font-weight: 700;
+	margin-top: 0px;
+	margin-bottom: 4px;
+	padding: 0px;
+    color: #0DCBF5;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 1.5;
+	font-family: tahoma, sans-serif;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding: 0px;
+    color: #0DCBF5;
+}
+
+h5 {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: tahoma, sans-serif;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	padding: 0px;
+    color: #0DCBF5;
+}
+
+h6 {
+	margin-bottom: 0px;
+	padding: 0px;
+    color: #0DCBF5;
+}
+
+.dice {
+	font-size: 16px;
+	font-family: orbitron, sans-serif;
+	font-weight: 700;
+	margin: 0px;
+	padding: 0px;
+    color:dodgerblue;
+}
+
+.pronounce {
+	font-size: 24px;
+	line-height: 1.5;
+	font-family: "Inter";
+	font-weight: 400;
+	/*float:right;*/
+	text-transform: unset;
+	/*margin-top: 24px;*/
+	position: relative;
+	bottom: 4px;
+	margin: 0px;
+	padding: 0px;
+    color: aqua;
+}
+
+.pronounce-button {
+	background: none;
+	cursor: pointer;
+	border: none;
+	font-family: inherit;
+	margin: 0px;
+	padding: 0px;
+    font-family: "Inter";
+	font-weight: 400;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #AAA; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #AAA;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.home {
+    position: absolute;
+    bottom: 24px;
+    background: #000a;
+    padding: 6px;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #ffffff27;
+    border-left-width: 0px;
+	border-radius: 0px 20px 20px 0px;
+}
+
+.home:hover {
+    background: #444a;
+}
+
+.prose {
+    background-color: #b57f33bb;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #ffce47;
+	border-radius: 20px 20px 20px 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+    color: #ffce47;
+    /*text-align: top left;*/
+}
+
+table {
+    background-color: #000000bb;
+    /*
+	border-width: 4px;
+	border-style: solid;
+	border-color: #ffffff27;
+	border-radius: 20px 20px 20px 20px;*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+th {
+    border-width: 0px;
+    border-top: 4px;
+    border-bottom: 4px;
+    border-style: solid;
+	border-color: #ffffff47;
+}
+
+td {
+    
+    border-width: 0px;
+    border-bottom: 4px;
+    border-style: solid;
+	border-color: #ffffff12;
+    padding: 5px;
+}
+
+.grid-large table {
+    width: 100%;
+    border-width: 0px;
+	padding: 0px;
+    border-collapse: separate;
+}
+
+.grid-large table td {
+	background-color: #000000bb;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #ffffff27;
+	border-radius: 20px 20px 20px 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+    text-align: center;
+    width:33%;
+}
+
+.grid-large table td img {
+
+}
+
+.topnote {
+	background-color: #000000bb;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #ffffff27;
+	border-radius: 20px 20px 20px 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.topnote:hover{
+	background-color: #444b;
+	border-color: #fffa;
+}
+
+.topnotecontent {
+  display: none;
+  overflow: hidden;
+    color: #FFF;
+}
+
+.collapsable {
+    --collapsable-width: ;
+    display: inline-block;
+    background: none;
+      border: none;
+    width: auto;
+        /*calc(100% - 48px);*/
+    height:fit-content;
+}
+
+.col-full{
+    background-color: #000000bb;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #ffffff27;
+	border-radius: 20px 20px 20px 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+    width:100%;
+    height:fit-content;
+}
+
+.col-full:hover{
+	background-color: #444b;
+	border-color: #fffa;
+}
+
+.col-content{
+  display: none;
+  overflow: hidden;
+  color: #FFF;
+  width:100%;
+  height:fit-content;
+    background:none;
+}
+
+.text-picture {
+    object-fit: contain;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.embed-species{
+    height: 1200px;
+    width:100%;
+}
+
+.embed-themes{
+    height: 1150px;
+    width:100%;
+}
+
+.embed-classes{
+    height: 1375px;
+    width:100%;
+}
+
+.embed-feats{
+    height: 5130px;
+    width:100%;
+}
+
+.embed-feats-firstlevel{
+    height: 2700px;
+    width:100%;
+}
