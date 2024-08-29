@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href=../starsedge/style.css />
+  <link as="font" rel="preload" href="https://fonts.cmsfly.com/css?family=Tahoma|Orbitron:400,700,900&display=swap" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.cmsfly.com/css?family=Tahoma|Orbitron:400,700,900&display=swap" />
+      <link rel="icon" href="./icons/sf-race-ancients-32.png">
+        <title>The Ancients - Star's Edge</title>
+  <style>
+    h3 {
+      padding-top: 20px;
+    }
+  </style>
+
+</head>
+<html>
+  <body>
+    <div class="page">
+      <div class="centerfold">
+        <div class="header">
+          <img src="https://i.imgur.com/L2ekCMd.png" alt="" loading="lazy" class="header-image" />
+          <a href="./home.html">
+            <div class="home">Back to Star's Edge</div>
+          </a>
+        </div>
+        <div class="article">
+          <div id="content">
+            <h1>The Ancients </h1>
+            
+            <p><i>The Ancients</i> is the general term used to describe all species that had developed an have long since gone extinct before current records were established. They cover a wide variety of races and civilizations, and are difficult to research due to the time-scales involved. Ruins and artifacts of these civilizations are found in numerous locations throughout the galaxy, and for many of them, the concrete reasons for their disappearances and extinctions are unknown.</p>
+            <br>
+            <p>Many distinct civilizations have been identified, and they shall be listed below. Some names are merely descriptors, as the original names of each are unknown.</p>
+            <br>
+
+                <p><img src="./icons/sf-ancients-chozo-32.png"/>
+                    <b style="color:#ff6a00;">Chozo</b> - 
+                    A bird-like race with great and powerful battle-hardened technologies, of which some lucky few (of which are one of the only sources of much of the pertaining research) seem to have harnessed over the course of history. Found in many locations within the gamma edge worlds. Possible ancestor of the Avians.</p><br>
+                
+                <p><img src="./icons/sf-ancients-forerunners-32.png"/>
+                    <b style="color:#00e1ff;">Forerunners</b> - 
+                    Creators of numerous ancient superstructures that have since fallen to disarray. Had once had definitive contact with the Necross, which is one possible extinction point of the species. It is unknown how far they spread.</p><br>
+                
+                <p><img src="./icons/sf-ancients-cultivators-32.png"/>
+                    <b style="color:#00c314;">Cultivators</b> - 
+                    The likely terraformer of many planets that should have been uninhabitable based on goldilocks calculations, and a common thread between many different species found across the galaxy. It is theorized that this species distributed life as a sort of artificial panspermia; for what purpose we do not know. It is unknown how many life forms owe their origins to them.</p><br>
+                
+                <p><img src="./icons/sf-ancients-delikai-32.png"/>
+                    <b style="color:#980000;">Delikai</b> - 
+                    It is hypothesized that these are the originators of many strange artifacts, many of which cause mutation and insanity in any self-proclaiming sapient species. As of writing, the mechanism behind this phenomena is unknown, but it seems to deal heavily with an alteration of the mind. Possible origin of the Necross.</p><br>
+                
+                <p><img src="./icons/sf-ancients-collectors-32.png"/>
+                    <b style="color:#6f00ff;">Collectors </b>- 
+                    An ancient race that seemed to organize and categorize every object around them, leading to massive gaps in space, and correspondingly massive catalogs of data about the collected items. Sadly, many archives of such data are too large to reasonably understand, and it is unknown what happened to the original items, whether they were merely moved, or possibly destroyed.</p><br>
+                
+          </div>
+      </div>
+    </div>
+      </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsable");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.lastElementChild.lastElementChild;
+          if (content.style.display === "block") {
+              this.style.width = "auto";
+              this.style.textAlign = "center";
+            content.style.display = "none";
+          } else {
+              this.style.width = "calc(100% - 48px)";
+              this.style.textAlign = "left";
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

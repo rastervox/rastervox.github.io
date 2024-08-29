@@ -382,11 +382,25 @@ td {
 	padding-left: 20px;
 	padding-right: 20px;
     text-align: center;
+	font-size: 16px;
     width:33%;
 }
 
-.grid-large table td img {
+.grid-large table td:hover{
+	background-color: #444b;
+	border-color: #fffa;
+}
 
+.grid-large table td img {
+	
+}
+
+.grid-large-image {
+	height: 80%;
+	width: 80%;
+	object-fit: contain;
+	margin: 0px;
+	padding: 16px;
 }
 
 .topnote {
