@@ -405,6 +405,14 @@ td {
 	padding: 16px;
 }
 
+.grid-large-image-small {
+	height: 40%;
+	width: 40%;
+	object-fit: contain;
+	margin: 0px;
+	padding: 16px;
+}
+
 .topnote {
 	background-color: #000000bb;
 	border-width: 4px;
